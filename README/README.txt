@@ -16,19 +16,14 @@ The first available date is 31 December 2019.
 
 The dataset can be downloaded from https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide.
 
-It is owned by ECDC and is subject to ECDC’s copyright policy. The dataset is public and may be reproduced, adapted and/or distributed, totally or in part,
-irrespective of the means and/or the formats used, provided that ECDC is always acknowledged as the original source of the material.
+It is owned by ECDC and is subject to ECDC's copyright policy. The dataset is public and may be reproduced, adapted and/or distributed, totally or in part, irrespective of the means and/or the formats used, provided that ECDC is always acknowledged as the original source of the material.
 Such acknowledgement must be included in each copy of the material. 
 
 --------------------------------------------------------------------------------------------------------------
 
 The Oxford COVID-19 Government Response Tracker (OxCGRT)
 
-OxCGRT is a dataset that contains data on various policy responses to the pandemic of COVID-19. This dataset has been developed by Blavatnik School of Government and is continuously updated
-by a cross-disciplinary Oxford University team. As of 9 July, the dataset has data from more than 160 countries. It includes 17 most common indicators such as school closures,
-travel restrictions and income support for citizens from 1 January 2020 to the present. The data from these indicators is then aggregated into a set of four indices:
-an overall government response index, a containment and health index, an economic support index and the original stringency index. A full description of the data and how it is collected,
-you can find in the working paper "Variation in government response to COVID-19" that can be accessed freely at https://www.bsg.ox.ac.uk/research/publications/variation-government-responses-covid-19.
+OxCGRT is a dataset that contains data on various policy responses to the pandemic of COVID-19. This dataset has been developed by Blavatnik School of Government and is continuously updated by a cross-disciplinary Oxford University team. As of 9 July, the dataset has data from more than 160 countries. It includes 17 most common indicators such as school closures, travel restrictions and income support for citizens from 1 January 2020 to the present. The data from these indicators is then aggregated into a set of four indices: an overall government response index, a containment and health index, an economic support index and the original stringency index. A full description of the data and how it is collected, you can find in the working paper "Variation in government response to COVID-19" that can be accessed freely at https://www.bsg.ox.ac.uk/research/publications/variation-government-responses-covid-19.
 
 OxCGRT dataset is freely available and can be downloaded from https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker.
 
@@ -36,10 +31,10 @@ OxCGRT dataset is freely available and can be downloaded from https://www.bsg.ox
 Files
 =============================================================================================================
 
-The overall structure of the code is as follows. There are four main files each of which produces a specific part of the simulations and applications:
+The overall structure of the code is as follows. There are two main files each of which produces a specific part of the simulations and applications:
 
-- main_sim.r produces the size and power simulations for our multiscale test reported in Section 4.1.
-- main_app.r produces the application results from Section 4.2, where our multiscale test is applied to the data on new daily cases of COVID-19.
+- main_simulations.R produces the size and power simulations for our multiscale test reported in Section 4.1.
+- main_covid.R produces the application results from Section 4.2, where our multiscale test is applied to the data on new daily cases of COVID-19. All of the figures and tables provided the paper can be obtained by running the code (the results will be the same up to a seed).
 
 The multiscale test is implemented in the R package MSinference, freely available on CRAN (https://cran.r-project.org/web/packages/MSinference/index.html). In order to run the code on your computer, you will need our R package MSinference as well as R packages Rcpp and xtable. The latter packages are freely available on CRAN.
 
