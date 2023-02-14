@@ -4,7 +4,7 @@
 rm(list=ls())
 
 library(tidyr)
-library(multiscale)
+library(MSinference)
 library(xtable)
 library(aweek)
 options(xtable.floating = FALSE)

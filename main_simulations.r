@@ -1,7 +1,7 @@
 #This is the main file for producing the simulation results for size and power, that are reported in Section 4.1.
 rm(list=ls())
 
-library(multiscale)
+library(MSinference)
 library(xtable)
 options(xtable.floating = FALSE)
 options(xtable.timestamp = "")
